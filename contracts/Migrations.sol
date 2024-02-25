@@ -2,7 +2,7 @@
 pragma solidity >=0.4.25 <0.7.0;
 
 contract Migrations {
-  address public owner;
+  address public  immutable owner;
   uint public last_completed_migration;
 
   modifier restricted() {
